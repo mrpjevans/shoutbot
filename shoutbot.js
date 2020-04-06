@@ -56,7 +56,7 @@ const httpInstance = http.createServer((req, res) => {
     // Pre-shared key check
     if (
       config.psks.length !== 0 &&
-      (!urlData.query.psk || config.psks.indexOf(urlData.query.psk) === -1)
+      (!payload.psk || config.psks.indexOf(payload.psk) === -1)
     ) {
       simpleResponse(401);
     }
