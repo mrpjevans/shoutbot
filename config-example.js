@@ -18,13 +18,16 @@ module.exports = {
   ip: [],
   // Port to listen on (Default 10207)
   port: 10207,
-  // SSL settings (Not yet supported)
+  // SSL settings (place files in the certs directory)
   ssl: {
     enabled: false,
-    cert: "",
-    key: "",
+    cert: "certificate.pem",
+    key: "privatekey.pem",
   },
+  // Defaults if not specified in payload
   defaultTitle: "Title",
   defaultMessage: "Message",
-  defaultSound: false,
+  defaultSound: true,
+  // Icons must be in the 'icons' subdirectory
+  defaultIcon: "notify.png",
 };
