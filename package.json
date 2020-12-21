@@ -17,6 +17,6 @@
   "author": "pj@mrpjevans.com",
   "license": "MIT",
   "dependencies": {
-    "node-notifier": "^5.4.0"
+    "node-notifier": "^8.0.1"
   }
 }
